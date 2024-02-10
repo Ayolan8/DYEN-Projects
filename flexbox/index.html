@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment on FlexBox</title>
+    <link rel="stylesheet"  href="styles.css" />
+    <link rel="stylesheet" href="fonts-6/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- side bar that contains navigation icons -->
+    <aside id="aside">
+        <div class="items1">
+            <div>
+                <img 
+                src="https://th.bing.com/th/id/R.ea6571af2d457cb37fb5c3c6d3b3da6c?rik=3ZHerTGW5gCp4A&pid=ImgRaw&r=0"
+                 class="sidebar-img" 
+                 alt="logo"
+                 />
+            </div>
+            
+            <div class="items1-sub">
+                <div>
+                    <img 
+                    src="https://cdn-icons-png.flaticon.com/512/8144/8144432.png"
+                    class="sidebar-img" 
+                    alt="logo"
+                 />
+                </div>
+                <div>
+                    <i class="fa-solid fa-signal"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </div>  
+        
+        
+        <div class="item2">
+            <div>
+                <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52"  alt="profile-pics" />
+            </div>
+
+            <div>
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+        </div>
+    </aside>
+
+    <!-- main contents of the page -->
+    <main>
+        <!-- heading -->
+        <section class="main-heading">
+            <h1>Boards</h1>
+            <img src="https://img.icons8.com/?size=64&id=OTxpMqWbm71F&format=png" id="display" alt="side-bar-logo" /> 
+        </section>
+
+
+        <!-- search and profile section -->
+        <section class="search-section">
+            <div>
+                <label for="dropdown-menu"></label>
+                <select id="dropdown-menu" name="dropdown-menu">
+                    <option value="#" selected>Barrone LLC</option>
+                    <option value="#">Ijalana LLC</option>
+                    <option value="#">Afolabi LLC</option>
+                </select>
+            </div>
+
+            <div class="search-input-n-profile">
+                <div class="search-input">
+                    <input type="search" placeholder="Search" />
+                </div>
+
+                <div class="profile-links">
+                    <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="profile-images" alt="" />
+                    <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="profile-images" alt="" />
+                    <img src="https://scontent.flos2-1.fna.fbcdn.net/v/t39.30808-6/312838597_5622505997840755_8313169978928408687_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE_OToZVEmvAr3kM7corMDPRYHOTktfUGdFgc5OS19QZ87HS6OJg4RmrB1Z60Cl6BI-znb0wc3lKDZ8DIMvIpQk&_nc_ohc=x27wM3-J1SYAX901QUs&_nc_zt=23&_nc_ht=scontent.flos2-1.fna&oh=00_AfA8GnAgtSHQwsDXkXYYrSMvt9n6yUA_PKQTm02xkCGzng&oe=65C8109B" class="profile-images" alt="" />
+                    <div class="profile-images more-profile-img">+1</div>
+                </div>
+            </div>
+            <!-- search and profile section ends here -->
+
+            <!-- containers for the cards-->
+        </section>
+        <section class="card-container">
+
+            <!-- Todo-card: card 1 -->
+            <div class="todo-cards">
+
+                <!-- The title of the cards -->
+                <div class="heading">
+                    <div class="box red-box"></div>
+                    <strong>To do</strong>&nbsp;
+                    <span class="accordion"> 
+                        <span class="open-accordion"><i class="fa-solid fa-plus"></i></span>
+                        <span class="close-accordion hidden"><i class="fa-solid fa-minus"></i></span>
+                    </span>
+                    
+                </div>
+
+                <!-- body of the card -->
+                <div class="body panel">
+                    <!-- image on the card -->
+                    <img 
+                    src="https://th.bing.com/th/id/OIP.SbZy0CWAhDnPKIhg9UCITwHaE1?w=340&h=181&c=7&r=0&o=5&pid=1.7" 
+                    class="card-display-img" alt="orange sky" />
+
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Make a new Post</h4>
+                            <p>In a new post you need to tell about our new action 
+                                when buying one product for a second gift provided
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card card-card-footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i>  10/20/27</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 ends here -->
+
+                <!-- Todo Card: card 2 -->
+
+                <!-- body of the card -->
+                <div class="imageless-card-body panel">
+                    
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Make a website prototype</h4>
+                            <p>Design of a landing page for the sale of cars' 
+                                main section, a section with advantages, contact
+                                section...
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i>  10/20/27</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- todo cards end here -->
+
+            <!-- doing-card begins here -->
+            <div class="doing-card">
+
+                <!-- The title of the cards -->
+                <div class="heading">
+                    <div class="box orange-box"></div>
+                    <strong>Doing</strong>&nbsp;
+                    <span class="accordion"> 
+                        <span class="open-accordion"><i class="fa-solid fa-plus"></i></span>
+                        <span class="close-accordion hidden"><i class="fa-solid fa-minus"></i></span>
+                    </span>
+                </div>
+
+                <!-- body of the card -->
+                <div class="body panel">
+                    <!-- image on the card -->
+                    <img 
+                    src="https://th.bing.com/th?id=OIF.I%2bfMhAh%2f%2fMnuPRk7IrL22A&w=335&h=166&c=7&r=0&o=5&pid=1.7" 
+                    class="card-display-img" 
+                    alt="" />
+
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Check design materials</h4>
+                            <p>Please have a look at Barone LLC, marketing
+                                materials and use them in design
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card card-card-footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i> 5/7/21</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- doing-card ends here -->
+
+            <!-- under-review-card begins here -->
+            <div class="under-review-card">
+
+                <!-- The title of the cards -->
+                <div class="heading">
+                    <div class="box blue-box"></div>
+                    <strong>Under review</strong> &nbsp;
+                    <span class="accordion"> 
+                        <span class="open-accordion"><i class="fa-solid fa-plus"></i></span>
+                        <span class="close-accordion hidden"><i class="fa-solid fa-minus"></i></span>
+                    </span>
+                </div>
+
+                <!-- body of the card -->
+                <div class="imageless-card-body panel">
+                    
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Discuss Year budget</h4>
+                            <p>Determination of the general goals and objectives 
+                                of the comapy. Determination of target values of...
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i> 6/19/21</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- body of the card -->
+                <div class="body panel">
+                    <!-- image on the card -->
+                    <img 
+                    src="https://th.bing.com/th/id/OIP.2zX7EpU_cbqvv1vfY9m2awHaEo?w=297&h=185&c=7&r=0&o=5&pid=1.7" 
+                    class="card-display-img" 
+                    alt="display pics on the card" />
+
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Content plan</h4>
+                            <p>Create a content plan for the period August 2021 -
+                                 October 2021 instagram, Dribble, Behance
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card card-card-footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i> 5/7/21</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 ends here -->
+            </div>
+
+            <!-- done-card begins here -->
+            <div class="done-card">
+
+                <!-- The title of the done cards -->
+                <div class="heading">
+                    <div class="box green-box"></div>
+                    <strong>Done</strong>&nbsp;
+                    <span class="accordion"> 
+                        <span class="open-accordion"><i class="fa-solid fa-plus"></i></span>
+                        <span class="hidden close-accordion"><i class="fa-solid fa-minus"></i></span>
+                    </span>
+                </div>
+
+                <!-- body of the card done-card 1-->
+                <div class="imageless-card-body panel">
+                    
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Weekly planning meeting</h4>
+                            <p>Discussing the content plan, tasks for
+                                for the next week and problems encountered
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i> 8/30/21</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card1 ends here -->
+
+
+                <!-- body of the done card 2 -->
+                <div class="imageless-card-body panel">
+                    
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Discuss a new concept</h4>
+                            <p>Creation of a unified visual image of a trademark 
+                                in the form of an original identity that expresses 
+                                the essence...
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i> 1/31/21</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 ends here -->
+
+                <!-- body of the done-card 3 -->
+                <div class="imageless-card-body panel">
+                    
+                    <!-- card title and description  -->
+                    <div class="card-description">
+                        <div>
+                            <h4>Discuss Month budget</h4>
+                            <p>Determination of the general goals and objectives
+                                of the company. Determination of target values...
+                            </p>
+                        </div>
+                            <!-- icon -->
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <!-- card footer which contains users pics -->
+                    <div class="card-footer">
+                        <div>
+                            <p><i class="fa-regular fa-calendar-days"></i> 7/18/21</p>
+                        </div>
+
+                        <div class="card-profile-img-links"> 
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/316411488_5700996126658408_3131748998177993825_n.jpg?stp=c0.75.1125.1125a_dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=3d9721&_nc_eui2=AeFtBskzGHMfO5jDkmT7uQVgIC79gIn2T6ggLv2AifZPqIcGyL_gKz0DjP1qgwlWWit3NgnsnLj3aAJZiH5nBpbj&_nc_ohc=JoN6bsUnxEgAX9ZpR-C&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfCFnHTUUpQas2RvA6LYOB3fHrWtoEv7VKFJ7bSr4vrM4Q&oe=65C81F3F" class="card-img" alt="">
+                            <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-6/320607785_649191416990965_1627899011707610240_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFUU0dFY8-mbksRUCl9cnFhs9Zq6PCR_Biz1mro8JH8GJ7yhlIHrHaDtE9QuFDAODi6BdSW5JH6F5n5bkbo3-n1&_nc_ohc=Ni8oRrat4SgAX8UHiGX&_nc_zt=23&_nc_ht=scontent.flos2-2.fna&oh=00_AfApi7tRqvO3hlM3QbAls8RukbnlCIczHgl__WtFVsTBvw&oe=65C7FE52" class="card-img" alt="">
+                            <div class="card-img card-more-img-link">+1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <script src="script.js"></script>  
+</body>
+</html>

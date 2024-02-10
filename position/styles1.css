@@ -1,0 +1,126 @@
+
+
+body {
+    background-color: aliceblue;;
+    /* color: rgb(8, 8, 110); */
+    color: #635858;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+input {
+    position: absolute;
+    top: 250px;
+    width: 300px;
+    left: 45%;
+    /* email icon in the input element */
+    background-image: url("./blueemail.png");
+    background-position: 10px 10px; /* set the position of the icon*/
+    background-repeat: no-repeat;
+    padding: 6px 25px 6px 40px;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+/* style the div element used for the dotted lines */
+div {
+    position: absolute;
+    display: inline-block;
+    border: 1px dashed black;
+    width: 0;
+}
+
+p {
+    position: absolute;
+    font-style: italic;
+    font-weight: bold;
+}
+
+::placeholder {
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+/* positioning the "wrapper-container" text */
+.p1{
+    top: 50px;
+    right: 40%;
+    
+}
+
+/* positioning the "Icon" text */
+.p2 {
+    bottom: 270px;
+    left: 33.4%;
+}
+
+/* positioning the "Text" text */
+.p3{
+    bottom: 350px;
+    left: 39%
+}
+
+/* dotted line for the "wrapper-container" text */
+.dotted-line1 {
+    top: 87px;
+    right: 45%;
+    height: 140px;
+}
+
+/* dotted line for the "Icon" text */
+.dotted-line2{
+    height: 190px;
+    bottom: 306px;
+    left: 34.6%;
+}
+
+/* dotted line for the "Text" text */
+.dotted-line3 {
+    height: 104px;
+    bottom: 385px;
+    left: 40.5%;
+}
+
+/* the display of the page on extra small device like mobile phone */
+@media screen and (max-width: 600px) {
+input {
+    width: 300px;
+    left: 45%;
+}
+
+.p1 {
+    right: 7.9%;
+}
+
+.p2{
+    left: 9%;
+}
+
+.p3 {
+    left: 27%
+}
+
+.dotted-line1{
+    right: 30%;
+}
+
+.dotted-line2{
+    height: 175px;
+    left: 12%;
+}
+
+.dotted-line3 {
+    height: 97px;
+    bottom: 386px;
+    left: 31%;
+}
+
+}

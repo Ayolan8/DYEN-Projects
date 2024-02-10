@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    background-color: #e0e6eb;
+    height: 100vh;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 60px 60px 30px;
+    height: 100vh;
+    gap: 10px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#dropdown-menu{
+    width: 170px;
+    height: 45px;
+    line-height: 13px;
+    text-align: center;
+    font-size: 16px;
+    padding: 1px 5px;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: none;
+}
+
+.search-input-n-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.profile-links {
+    display: flex;
+}
+
+input[type="search"]{
+    background-image: url("https://img.icons8.com/?size=24&id=82712&format=png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    width: 300px;
+    height: 45px;
+    line-height: 13px;
+    border-radius: 15px;
+    border: none;
+}
+
+::placeholder{
+    opacity: 0.7;
+    font-size: 16px;
+}
+
+.profile-images {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: -10px;
+    border: 2px solid white;
+}
+
+.more-profile-img {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+aside {
+    background-color: white;
+    width: 7%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+    height: 100vh;
+}
+
+.sidebar-img {
+    width: 60px;
+    height: 60px;
+}
+
+aside  i {
+    font-size: 22px;
+    color: gray;
+    opacity: 0.6;
+}
+
+.items1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.items1-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.item2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* set the width of the 4 direct children of the 'card-container' */
+.card-container > div {
+    width: 23.5%;
+    gap: 10px;
+    
+}
+ 
+.todo-cards, 
+.doing-card,
+.under-review-card,
+.done-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.box {
+    align-self: center;
+    width: 13px;
+    height: 13px;
+    border-radius: 4px;
+}
+
+.red-box {
+    background-color: #d70505;
+}
+
+.orange-box {
+    background-color: #ee9c05;
+}
+
+.blue-box {
+    background-color: blue;
+}
+
+.green-box {
+    background-color: green;
+}
+
+.body, .imageless-card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    height: 250px;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.imageless-card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    height: 150px;
+    gap: 10px;
+}
+
+.card-display-img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+}
+
+p{
+    color: grey;
+    text-align:start;
+    font-size: 14px;
+}
+
+p:first-of-type{
+    margin-top: 6px;
+}
+
+.card-profile-img-links {
+    display: flex;
+}
+
+
+.card-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-left: -11px;
+    border: 3px solid white;
+}
+
+.card-more-img-link {
+    background-color: #b6b6dc;
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.card-description, .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start ;
+    gap: 7px;
+}
+
+.under-review {
+    border: 1px solid purple;
+}
+
+.done {
+    border: 1px solid red;
+}
+
+
+.fa-instagram, .fa-google, .fa-pinterest, .fa-whatsapp, .fa-email {
+    font-size: 23px;
+    opacity: 0.5;
+}
+
+.upper-items-3{
+    display: flex;
+    flex-direction: column;    
+}
+
+#display {
+    display: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 2px;
+    opacity: 0.7;
+}
+
+.accordion:hover {
+    background-color: gray;
+    border-radius: 3px;
+    color: #e0e6eb;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+   body {
+    position: relative;
+   }
+   
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    #dropdown-menu, input[type="search"] {
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    input[type="search"] {
+        background-position: 10px 6px; 
+        padding: 12px 20px 6px 35px;
+    }
+
+    .profile-images{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
+
+    .search-input-n-profile{
+        gap: 1px;
+    }
+
+    .card-container {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container > div{
+        width: 350px;
+        max-width: 90%;
+    }
+
+    aside {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        width: 40%;
+        border-radius: 0;
+        align-items: center;
+    }
+
+    .items1, .items1-sub {
+        gap: 8px;
+    }
+
+    .item2 {
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .main-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #display {
+        display: block;
+    }
+}

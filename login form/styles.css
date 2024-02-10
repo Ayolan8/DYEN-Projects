@@ -1,0 +1,109 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+:root {
+    --blue: #0000ff;
+}
+
+body {
+    background-color: #e5eaef;
+    text-align: center;
+    font-size: 15px;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p {
+    color: grey;
+    font-size: 13.5px;
+    opacity: 0.8;
+    padding-top: 3px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-bottom: 30px;
+}
+
+.login-container {
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid #f5ebeb;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* https://icons8.com/icon/60688/new-post */
+/* https://img.icons8.com/?size=24&id=85500&format=png */
+input[type="text"]{
+    background-image: url("../images/blueemail.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+/* https://icons8.com/icon/3312/lock */
+/* https://icons8.com/icon/59825/lock  blue */
+/* /images/passkey2.png */
+/* ../images/blueemail.png */
+input[type="password"]{
+    background-image: url("../images/passkey2.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    filter:
+}
+
+input[type="submit"] {
+    background-color: #4949e7;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: #0000ff;
+}
+
+::placeholder {
+    font-size: 13px;
+}
+
+.last-paragraph {
+    margin-top: 30px;
+}
